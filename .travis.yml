@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+  - "4"
+  - "6"
+  - "8"
+before_script:
+  - npm install -g npm@latest
+script:
+  - npm run ci
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/f1c9df131febcfade24c
+    on_success: always
+    on_failure: always
+    on_start: never

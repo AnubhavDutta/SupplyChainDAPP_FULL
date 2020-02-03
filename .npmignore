@@ -1,0 +1,9 @@
+src/
+.*
+AUTHORS.md
+bower.json
+CHANGES.md
+CONTRIBUTING.md
+demo.html
+Gruntfile.js
+README.md
