@@ -14,3 +14,5 @@ INSERT INTO `users` (`id`, `email`, `username`, `password`, `role`) VALUES
 (6, 'samplemanufacturer@gmail.com', 'SampleManufacturer', '5f4dcc3b5aa765d61d8327deb882cf99', 0),
 (7, 'samplelogistics@gmail.com', 'SampleLogistics', '5f4dcc3b5aa765d61d8327deb882cf99', 1),
 (8, 'samplecustomer@gmail.com', 'SampleCustomer', '5f4dcc3b5aa765d61d8327deb882cf99', 2);
+
+# Developed by Anubhav Dutta : https://www.linkedin.com/in/iamanubhavdutta/

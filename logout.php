@@ -5,3 +5,4 @@
     unset( $_SESSION['username'] );
     redirect('index.php');
 ?>
+<!-- Developed by Anubhav Dutta : https://www.linkedin.com/in/iamanubhavdutta/ -->

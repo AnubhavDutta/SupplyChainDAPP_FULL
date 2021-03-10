@@ -13,3 +13,4 @@
 		$con -> close();
 	}
 ?>
+<!-- Developed by Anubhav Dutta : https://www.linkedin.com/in/iamanubhavdutta/ -->
