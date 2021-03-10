@@ -40,22 +40,19 @@ contract SupplyChain {
         return true;
     }
     
-    function addState(uint _productId, string memory _date, string memory _location) public returns (string memory) {
+    function addState(uint _productId, string memory info) public returns (string memory) {
         require(_productId<=items);
-        string memory desc="<br><br><b>Date: ";
-        desc=concat(desc, _date);
-        desc=concat(desc, "</b><br>Location: ");
-        desc=concat(desc, _location);
         
-        State memory newState = State({person: msg.sender, description: desc});
+        State memory newState = State({person: msg.sender, description: info});
         
         allProducts[_productId].positions[ allProducts[_productId].totalStates ]=newState;
         
         allProducts[_productId].totalStates = allProducts[_productId].totalStates +1;
-        return desc;
+        return info;
     }
     
     function searchProduct(uint _productId) public returns (string memory) {
+
         require(_productId<=items);
         string memory output="Product Name: ";
         output=concat(output, allProducts[_productId].productName);
@@ -65,8 +62,8 @@ contract SupplyChain {
         for (uint256 j=0; j<allProducts[_productId].totalStates; j++){
             output=concat(output, allProducts[_productId].positions[j].description);
         }
-        
         return output;
+        
     }
     
 }

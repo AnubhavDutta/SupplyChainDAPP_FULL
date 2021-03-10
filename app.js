@@ -1,4 +1,4 @@
-var contractAbi =[
+var contractAbi = [
 	{
 		"anonymous": false,
 		"inputs": [
@@ -21,7 +21,7 @@ var contractAbi =[
 			},
 			{
 				"internalType": "string",
-				"name": "_info",
+				"name": "info",
 				"type": "string"
 			}
 		],
@@ -103,6 +103,6 @@ var contractAbi =[
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}
-];
+]; // Paste Contract Here
 
-var contractAddress ='0x7be160804ed3CeB8bBC87c5E6dB0127712911448';
+var contractAddress ='0x65A89597D773ED4F84B29e9a7ff6572fc64aD27f'; // Paste Address here
